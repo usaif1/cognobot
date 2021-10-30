@@ -32,6 +32,15 @@ module.exports = {
       boxShadow: {
         roundedicon: "0px 0px 15px rgba(0, 0, 0, 0.15)",
       },
+      keyframes: {
+        fadein: {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+      },
+      animation: {
+        fadein: "fadein 1.2s ease-in",
+      },
     },
   },
   variants: {

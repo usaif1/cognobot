@@ -2,8 +2,8 @@
 import React from "react";
 
 //imports
+import Heading from "./Heading";
 import { Spacer, RoundedIcon } from "components/common";
-import hello from "assets/hello.png";
 import robo from "assets/robo.png";
 
 const Chatbot: React.FC = () => {
@@ -16,18 +16,11 @@ const Chatbot: React.FC = () => {
             "linear-gradient(123.75deg, #F5821F 1.87%, #FF5C00 120.46%)",
         }}
       >
-        <p className="text-left text-3xl text-white font-bold">IRIS</p>
-        <Spacer className="h-3" />
-        <div className="flex">
-          <p className="text-left text-xl text-white font-bold">Hello</p>
-          <img src={hello} alt="hello" className="h-6 w-6 ml-5" />
-        </div>
-        <Spacer className="h-3" />
-        <p className="text-left text-lg text-white font-medium w-7/12">
-          I am Iris, a Virtual Assistant How may I help you?
-        </p>
+        <Heading />
         <Spacer className="h-4" />
-        <RoundedIcon src={robo} size={16} iconSize={8} bgColor="orange2" />
+        <div className="animate-fadein">
+          <RoundedIcon src={robo} size={16} iconSize={8} bgColor="orange2" />
+        </div>
       </div>
       <div className="h-2/3 border border-black rounded-br-2xl rounded-bl-2xl" />
     </div>
