@@ -21,10 +21,13 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     extend: {
+      backgroundColor: {
+        orange2: "#FF5C00",
+      },
       gradientColorStops: (theme) => ({
         ...theme("colors"),
-        orange1: "#F5821F",
-        orange2: "#FF5C00",
+        orange1: Colors.orange1,
+        orange2: Colors.orange2,
       }),
       height: {
         chatbot: "40rem",
@@ -40,6 +43,9 @@ module.exports = {
       },
       animation: {
         fadein: "fadein 1.2s ease-in",
+      },
+      transitionDelay: {
+        5000: "5000ms",
       },
     },
   },
